@@ -107,7 +107,7 @@ Click **"Advanced"** → **"Add Environment Variable"** and add these:
 
 ```
 PORT=5000
-MONGODB_URI=mongodb+srv://bosscars8055_admin:Boss$Cars$8055@bosscars.6xb9ylu.mongodb.net/bosscars
+MONGODB_URI=mongodb+srv://bosscars8055_admin:YOUR_ACTUAL_PASSWORD@bosscars.6xb9ylu.mongodb.net/bosscars
 JWT_SECRET=bosscars_secret_key_2024_secure
 DEFAULT_ADMIN_USERNAME=admin
 DEFAULT_ADMIN_PASSWORD=admin123
