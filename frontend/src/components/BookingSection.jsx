@@ -244,6 +244,7 @@ const BookingSection = () => {
                   onChange={handleChange}
                   className={`form-input ${errors.name ? 'error' : ''}`}
                   placeholder="Enter your full name"
+                  autoComplete="off"
                 />
                 {errors.name && <span className="form-error">{errors.name}</span>}
               </div>
@@ -259,6 +260,7 @@ const BookingSection = () => {
                   className={`form-input ${errors.mobile ? 'error' : ''}`}
                   placeholder="10-digit mobile number"
                   maxLength="10"
+                  autoComplete="off"
                 />
                 {errors.mobile && <span className="form-error">{errors.mobile}</span>}
               </div>
@@ -274,6 +276,7 @@ const BookingSection = () => {
                 onChange={handleChange}
                 className={`form-input ${errors.email ? 'error' : ''}`}
                 placeholder="your.email@example.com"
+                autoComplete="off"
               />
               {errors.email && <span className="form-error">{errors.email}</span>}
             </div>
@@ -289,6 +292,7 @@ const BookingSection = () => {
                   onChange={handleChange}
                   className={`form-input ${errors.pickupLocation ? 'error' : ''}`}
                   placeholder="Enter pickup location"
+                  autoComplete="off"
                 />
                 {errors.pickupLocation && <span className="form-error">{errors.pickupLocation}</span>}
               </div>
@@ -303,6 +307,7 @@ const BookingSection = () => {
                   onChange={handleChange}
                   className={`form-input ${errors.dropoffLocation ? 'error' : ''}`}
                   placeholder="Enter drop-off location"
+                  autoComplete="off"
                 />
                 {errors.dropoffLocation && <span className="form-error">{errors.dropoffLocation}</span>}
               </div>
