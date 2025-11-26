@@ -62,10 +62,11 @@ mongoose.connect(MONGODB_URI)
   .then(() => {
     console.log('✅ Connected to MongoDB');
     
-    // Start server
-    app.listen(PORT, () => {
+    // Start server - bind to 0.0.0.0 for cloud deployment
+    const host = process.env.NODE_ENV === 'production' ? '0.0.0.0' : 'localhost';
+    app.listen(PORT, host, () => {
       console.log(`🚀 Boss Cars server running on port ${PORT}`);
-      console.log(`📍 API URL: http://localhost:${PORT}`);
+      console.log(`📍 API URL: http://${host}:${PORT}`);
       console.log(`🔧 Environment: ${process.env.NODE_ENV || 'development'}`);
     });
   })
