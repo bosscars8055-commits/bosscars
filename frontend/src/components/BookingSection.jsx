@@ -188,6 +188,11 @@ const BookingSection = () => {
         type: 'success',
         text: 'Booking successful! We will contact you soon.'
       });
+
+      // Auto-hide success message after 5 seconds
+      setTimeout(() => {
+        setSubmitMessage(null);
+      }, 5000);
       
       // Reset form
       setFormData({
